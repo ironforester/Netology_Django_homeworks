@@ -8,6 +8,7 @@ import datetime
 
 from django.http import HttpResponse
 
+
 class ProductViewSet(ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
@@ -15,12 +16,12 @@ class ProductViewSet(ModelViewSet):
     search_fields = ['title', 'description']
 
 
-
 class StockViewSet(ModelViewSet):
     queryset = Stock.objects.all()
     serializer_class = StockSerializer
     filter_backends = [SearchFilter]
     search_fields = ['products__title', 'products__description']
+
 
 @api_view(['GET'])
 def time_view(request):
