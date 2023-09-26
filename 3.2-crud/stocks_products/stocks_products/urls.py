@@ -20,6 +20,6 @@ from logistic.views import time_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('current_time/', time_view, name='time'),
     path('api/v1/', include('logistic.urls')),
+    path('api/v1/current_time/', time_view, name='time'),
 ]
