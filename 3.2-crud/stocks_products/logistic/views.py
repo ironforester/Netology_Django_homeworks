@@ -22,4 +22,4 @@ class StockViewSet(ModelViewSet):
 
 @api_view(['GET'])
 def just_view(request):
-    return Response('SUPER')
+    return Response('SUPER final test')
