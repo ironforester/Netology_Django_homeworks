@@ -4,9 +4,6 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from logistic.models import Product, Stock
 from logistic.serializers import ProductSerializer, StockSerializer
-import datetime
-
-from django.http import HttpResponse
 
 
 class ProductViewSet(ModelViewSet):
