@@ -24,7 +24,5 @@ class StockViewSet(ModelViewSet):
 
 
 @api_view(['GET'])
-def time_view(request):
-    current_time = datetime.datetime.now().time()
-    msg = f'Текущее время: {current_time}'
-    return Response(msg)
+def just_view(request):
+    return Response('Some text')

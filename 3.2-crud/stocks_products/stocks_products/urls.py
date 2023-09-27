@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-from logistic.views import time_view
+from logistic.views import just_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('logistic.urls')),
-    path('api/v1/current_time/', time_view, name='time')
+    path('api/v1/test/', just_view)
 ]
