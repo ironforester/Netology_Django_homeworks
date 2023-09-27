@@ -41,7 +41,7 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Обновление PIP
+      - name: Обновление pip
         run: pip install --upgrade pip
 
       - name: Установка зависимостей
