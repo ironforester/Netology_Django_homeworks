@@ -1,4 +1,4 @@
-name: Djungo deploy
+name: Djungo deploy ironforester
 
 on:
   push:
