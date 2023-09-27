@@ -41,9 +41,6 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Обновление pip
-        run: pip install --upgrade pip
-
       - name: Установка зависимостей
         run: pip install -r requirements.txt
 
