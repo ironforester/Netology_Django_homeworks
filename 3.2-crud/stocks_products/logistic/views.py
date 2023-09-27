@@ -22,4 +22,4 @@ class StockViewSet(ModelViewSet):
 
 @api_view(['GET'])
 def just_view(request):
-    return Response('Another text')
+    return Response('Some text for testing')
